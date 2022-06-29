@@ -361,22 +361,21 @@
 
 .team-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
     align-content: center;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto;
 }
 [class*="team-box-"] .fas{
     border-radius: 50%;
     padding: 10px;
     background-color: grey;
     text-align: center;
-    width: 50px;
+    width: 60px;
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
-
 }
 
 .team-container i{
@@ -385,10 +384,13 @@
     margin-left: auto;
     margin-top: 30px;
     margin-bottom: 30px;
+    
 }
 
 .team-container img{
     border-radius: 50%;
+    width:250px;
+    height: 250px;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -1299,6 +1301,14 @@ input[type=submit]:focus{
     }
     .team-box-4{
         grid-area: 4/1/5/5;
+        margin: 10px 25px 10px 25px;
+    }
+    .team-box-5{
+        grid-area: 5/1/6/5;
+        margin: 10px 25px 10px 25px;
+    }
+    .team-box-6{
+        grid-area: 6/1/7/5;
         margin: 10px 25px 10px 25px;
     }
 
