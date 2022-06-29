@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .slider-container{
+            background: radial-gradient(white, grey);
+        }
+        img{
+            background: white;
+            width: 32%;
+            height: 200px;
+            object-fit: cover;
+            padding: 5px;
+        }
+
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+
+        }             
+
+        @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="myslides fade">
+            <img src="./images/New-india.png" alt="">
+            <img src="./images/Oman united.png" alt="">
+            <img src="./images/Qatar-Insurance.png" alt="">
+        </div>
+        <div class="myslides fade">
+            <img src="./images/Oman united.png" alt="">
+            <img src="./images/Qatar-Insurance.png" alt="">
+            <img src="./images/Ahlia.png" alt="">
+        </div>
+        <div class="myslides fade">
+            <img src="./images/Qatar-Insurance.png" alt="">
+            <img src="./images/Ahlia.png" alt="">
+            <img src="./images/Saico.png" alt="">
+        </div>
+        <div class="myslides fade">
+            <img src="./images/Ahlia.png" alt="">
+            <img src="./images/Saico.png" alt="">
+            <img src="./images/Vision.png" alt="">
+        </div>
+    </div>
+
+<script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("myslides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#5bbd53">
+    <title>treeG Majan Eye Centre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+    <script src="https://kit.fontawesome.com/309e597dc5.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body class="formbody">
+    <div class="formpage">
+        <div class="glass">
+            <div class="glassimg">
+                <img src="images/Logo-Png-768x327.png" alt="logo" width="30%" >
+            </div>
+            
+            <div class="formheader">
+                <h2>ملاحظاتك قيمه،وسوف توفر لك خدمه أفضل</h2>
+                <h4>Your feedback is valuable, it will provide you a better service!</h4>
+            </div>
+            <form action="connect.php" method="post" class="form-container">
+                <div class="form">
+                    <label for="name" class="label1">Name/الإسم<sup>*</sup></label>
+                    <input type="text" name="name" id="name" required autocomplete="off">
+                    <label for="phone" class="label1">Phone/رقم التلفون<sup>*</sup></label>
+                    <input type="text" name="phone" id="phone" min="8" required autocomplete="off">
+                    <br>
+                    <label for="place" class="label1">Place/المكان<sup>*</sup></label>
+                    <input type="text" name="place" id="place" required autocomplete="off">
+                    <label for="email" class="label1">Email/الإيميل<sup>*</sup></label>
+                    <input type="text" name="email" id="email" required autocomplete="off">
+                    <br>
+                    <fieldset>
+    
+                        <div class="labelcontainer">
+                            <label for="reception">Reception/الاستقبال<sup>*</sup></label>
+                        </div>
+                        <div class="radiocontainer">
+                            <input type="radio" name="reception" id="excellent" value="excellent" required><label for="excellent">Excellent/ممتاز
+                            </label>
+                            <input type="radio" name="reception" id="good" value="good"><label for="good">Good/ جيد
+                            </label>
+                            <input type="radio" name="reception" id="average" value="average"><label for="average">Average/متوسط
+                            </label>
+                            <input type="radio" name="reception" id="poor" value="poor"><label for="poor">Poor/سيئ</label>
+                            <br>
+                        </div>
+    
+                        <div class="labelcontainer">
+                            <label for="optometry">Optometry/ <br> أخصائي عيون<sup>*</sup></label>
+                        </div>
+                        <div class="radiocontainer">
+                            <input type="radio" name="optometry" id="excellent" value="excellent" required><label optometryr="excellent">Excellent/ممتاز
+                            </label>
+                            <input type="radio" name="optometry" id="good" value="good"><label for="good">Good/ جيد
+                            </label>
+                            <input type="radio" name="optometry" id="average" value="average"><label for="average">Average/متوسط
+                            </label>
+                            <input type="radio" name="optometry" id="poor" value="poor"><label for="poor">Poor/سيئ</label><br>
+                        </div>
+    
+                        <div class="labelcontainer">
+                            <label for="doctor">Doctor/الدكتور<sup>*</sup></label>
+                        </div>
+                        <div class="radiocontainer">
+                            <input type="radio" name="doctor" id="excellent" value="excellent" required><label for="excellent">Excellent/ممتاز
+                            </label>
+                            <input type="radio" name="doctor" id="good" value="good"><label for="good">Good/ جيد
+                            </label>
+                            <input type="radio" name="doctor" id="average" value="average"><label for="average">Average/متوسط
+                            </label>
+                            <input type="radio" name="doctor" id="poor" value="poor"><label for="poor">Poor/سيئ</label><br>
+                        </div>
+    
+                        <div class="labelcontainer">
+                            <label for="nursing">Nursing/ التمريض<sup>*</sup></label>
+                        </div>
+                        <div class="radiocontainer">
+                            <input type="radio" name="nursing" id="excellent" value="excellent" required><label for="excellent">Excellent/ممتاز
+                            </label>
+                            <input type="radio" name="nursing" id="good" value="good"><label for="good">Good/ جيد
+                            </label>
+                            <input type="radio" name="nursing" id="average" value="average"><label for="average">Average/متوسط
+                            </label>
+                            <input type="radio" name="nursing" id="poor" value="poor"><label for="poor">Poor/سيئ</label><br>
+                        </div>
+    
+                        <div class="labelcontainer">
+                            <label for="opticals">Opticals/ النظارات<sup>*</sup></label>
+                        </div>
+                        <div class="radiocontainer">
+                            <input type="radio" name="opticals" id="excellent" value="excellent" required><label for="excellent">Excellent/ممتاز
+                            </label>
+                            <input type="radio" name="opticals" id="good" value="good"><label for="good">Good/ جيد
+                            </label>
+                            <input type="radio" name="opticals" id="average" value="average"><label for="average">Average/متوسط
+                            </label>
+                            <input type="radio" name="opticals" id="poor" value="poor"><label for="poor">Poor/سيئ</label><br>
+                            <input type="radio" name="opticals" id="n/a" value="n/a"><label for="poor">N/A</label><br>
+                        </div>
+    
+                        <div class="labelcontainer">
+                            <label for="cleanliness">Cleanliness/النظافه<sup>*</sup></label>
+                        </div>                    
+                        <div class="radiocontainer">
+                            <input type="radio" name="cleanliness" id="excellent" value="excellent" required><label for="excellent">Excellent/ممتاز
+                            </label>
+                            <input type="radio" name="cleanliness" id="good" value="good"><label for="good">Good/ جيد
+                            </label>
+                            <input type="radio" name="cleanliness" id="average" value="average"><label for="average">Average/متوسط
+                            </label>
+                            <input type="radio" name="cleanliness" id="poor" value="poor"><label for="poor">Poor/سيئ</label><br>
+                        </div>
+    
+                        <div class="labelcontainer">
+                            <label for="yourSuggestions">Your Suggestions</label><br>
+                        </div> 
+                        <textarea class="radiocontainer" name="yourSuggestions" id="" cols="65" rows="4"></textarea>
+                        
+                    </fieldset>
+                    <br>
+                    <div class="buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+    </div>
+</body>
+</html>
